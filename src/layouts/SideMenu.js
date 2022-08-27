@@ -28,7 +28,7 @@ function SideMenu({ className }) {
               </b>
             </li>
             <li>
-              <b className="bg-whitesmoke-hovered text-muted cursor-pointer br-5px font-style-paragraph">
+              <b className="bg-whitesmoke-hovered text-muted cursor-pointer br-5px font-style-paragraph active">
                 Buttons
               </b>
             </li>
