@@ -2,7 +2,7 @@ import "../style/sideMenu.scss";
 function SideMenu({ className }) {
   return (
     <div
-      className={`mainSideNav body h-100 position-fixed bg-white box-shadow ${className}`}
+      className={`mainSideNav body h-100 position-fixed  bg-white box-shadow ${className}`}
     >
       <div className="container">
         <div className="header logo padding-auto text-center">
