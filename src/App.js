@@ -47,7 +47,7 @@ function App() {
               <Button label="Default" size="md" />
               <Button label="Default" size="lg" />
             </div>
-            <div className="d-flex gap-24">
+            <div className="d-flex gap-24 four-box">
               <Button label="Default" color="default" />
               <Button label="Primary" color="primary" />
               <Button label="Secondary" color="secondary" />
