@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "../style/sideMenu.scss";
 function SideMenu({ className }) {
   return (
@@ -28,14 +29,18 @@ function SideMenu({ className }) {
               </b>
             </li>
             <li>
-              <b className="bg-whitesmoke-hovered text-muted cursor-pointer br-5px font-style-paragraph active">
-                Buttons
-              </b>
+              <Link to="/button">
+                <b className="bg-whitesmoke-hovered text-muted cursor-pointer br-5px font-style-paragraph">
+                  Buttons
+                </b>
+              </Link>
             </li>
             <li>
-              <b className="bg-whitesmoke-hovered text-muted cursor-pointer br-5px font-style-paragraph">
-                Inputs
-              </b>
+              <Link to="/input">
+                <b className="bg-whitesmoke-hovered text-muted cursor-pointer br-5px font-style-paragraph">
+                  Inputs
+                </b>
+              </Link>
             </li>
             <li>
               <b className="bg-whitesmoke-hovered text-muted cursor-pointer br-5px font-style-paragraph">

@@ -213,6 +213,12 @@ body {
   flex-direction: column;
   gap: 24px;
 }
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 .gap-24 {
   gap: 24px;
 }
@@ -221,11 +227,12 @@ body {
   .main {
     flex-direction: column;
   }
-  #button-section > div {
+  #button-section > div,
+  #input-section > div {
     width: 100%;
     /* padding-top: 20em; */
   }
-  .ml-auto{
+  .ml-auto {
     margin-left: 1em;
   }
   .four-box {
@@ -238,4 +245,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
+}
+a {
+  text-decoration: none;
 }
