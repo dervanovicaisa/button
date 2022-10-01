@@ -12,25 +12,25 @@ function Input({
 }) {
   let classes = "";
   if (error !== undefined) {
-    classes += "error";
+    classes += " error";
   }
   if (disabled !== undefined) {
-    classes += "disabled";
+    classes += " disabled";
   }
   if (helperText !== undefined) {
-    classes += "helperText";
+    classes += " helperText";
   }
   if (startIcon !== undefined) {
-    classes += "startIcom";
+    classes += " startIcom";
   }
   if (endIcon !== undefined) {
-    classes += "endIcon";
+    classes += " endIcon";
   }
   if (size !== undefined) {
     classes += size;
   }
   if (fullwidth !== undefined) {
-    classes += "fullwidth";
+    classes += " fullwidth";
   }
   if (multline !== undefined) {
     classes += multline;
@@ -50,6 +50,11 @@ function Input({
           disabled={disabled}
         />
       )}
+      {startIcon ? (
+        <span className="material-icons startIcon">{startIcon}</span>
+      ) : endIcon ? (
+        <span className="material-icons endIcon">{endIcon}</span>
+      ) : null}
       {helperText && (
         <label
           className={

@@ -42,7 +42,7 @@
   border: 1px solid #d32f2f;
 }
 .inputs .error:focus-visible {
-  border: 1px solid #d32f2f;
+  outline: #d32f2f auto;
 }
 
 // disabled
@@ -67,6 +67,27 @@
   color: #d32f2f;
 }
 
+// starIcon && endIcon
+
+.inputs .material-icons.startIcon {
+  position: absolute;
+  width: 12%;
+  height: 12%;
+  margin-top: 19px;
+  margin-left: 5px;
+}
+
+.inputs .material-icons.endIcon {
+  position: absolute;
+  width: 2%;
+  height: 12%;
+  margin-top: 18px;
+  padding-left: 13%;
+}
+.inputs .styled-div input,
+.inputs .styled-div input {
+  padding-left: 15px;
+}
 // sizing
 
 .inputs .sm {

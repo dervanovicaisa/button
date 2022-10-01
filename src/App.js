@@ -1,16 +1,20 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useNavigate } from "react-router-dom";
 import "./App.css";
 // import SideMenu from "./layouts/SideMenu";
 import ButtonView from "./views/ButtonView";
 import InputView from "./views/InputView";
 
 function App() {
+  const navigate = useNavigate();
   return (
     <Routes>
-      <Route exact path="/">
-        {/* <div className="main d-flex">
-          <SideMenu className="w-15" />
-        </div> */}
+      <Route
+        exact
+        path="/"
+        render={() => {
+          return navigate("/input");
+        }}
+      >
         <Route path="/button" element={<ButtonView />} />
         <Route path="/input" element={<InputView />} />
       </Route>

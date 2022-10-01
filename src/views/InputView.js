@@ -3,7 +3,7 @@ import "../style/input.scss";
 function InputView() {
   return (
     <div id="input-section" className="w-85 ml-auto">
-      <div className="w-80 m-auto pt-5">
+      <div className="w-80 m-auto pt-5 pb-5">
         <div className="header text-title">
           <h2 className="font-weight-500">Input</h2>
         </div>
